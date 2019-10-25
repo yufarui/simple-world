@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Created-By: yufr
+Can-Redefine-Classes: true
+Agent-Class: asm.TestAgent
+Can-Retransform-Classes: true
+Boot-Class-Path: javassist-3.12.1.GA.jar
+
