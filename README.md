@@ -1,2 +1,2 @@
-# simpleAsm
-简单的asm使用练习
+# simple-world
+个人代码练习
