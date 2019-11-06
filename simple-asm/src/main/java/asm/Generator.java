@@ -19,7 +19,7 @@ public class Generator {
 
         byte[] data = classWriter.toByteArray();
 
-        File f = new File("target/classes/asm/Base.class");
+        File f = new File("simple.asm/target/classes/asm/Base.class");
         try (FileOutputStream fout = new FileOutputStream(f)) {
             fout.write(data);
         }
