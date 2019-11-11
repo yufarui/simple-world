@@ -12,6 +12,7 @@
         <module>simple-cache</module>
         <module>simple-asm</module>
         <module>simple-annotion</module>
+        <module>simple-cloud</module>
     </modules>
 
     <properties>
