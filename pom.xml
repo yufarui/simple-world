@@ -13,6 +13,7 @@
         <module>simple-asm</module>
         <module>simple-annotion</module>
         <module>simple-cloud</module>
+        <module>simple-jdk</module>
     </modules>
 
     <properties>
