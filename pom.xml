@@ -9,11 +9,13 @@
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
+        
         <module>simple-cache</module>
         <module>simple-asm</module>
         <module>simple-annotion</module>
         <module>simple-cloud</module>
         <module>simple-jdk</module>
+        <module>simple-io</module>
     </modules>
 
     <properties>
