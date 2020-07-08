@@ -16,6 +16,9 @@
         <module>simple-cloud</module>
         <module>simple-jdk</module>
         <module>simple-io</module>
+        <module>simple-test</module>
+        <module>simple-flux</module>
+        <module>shell-script</module>
     </modules>
 
     <properties>
