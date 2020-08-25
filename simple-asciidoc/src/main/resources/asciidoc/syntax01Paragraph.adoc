@@ -1,0 +1,37 @@
+:experimental:
+:hardbreaks:
+:icons: font
+
+= paragraph
+
+NOTE: An admonition paragraph draws the reader's attention to auxiliary information.
+Its purpose is determined by the label at the beginning of the paragraph.
+
+Here are the other built-in admonition types:
+
+TIP: Pro tip...
+
+IMPORTANT: Don't forget...
+
+WARNING: Watch out for...
+
+CAUTION: Ensure that...
+[#leader]
+&sect; leader
+[.lead]
+This text will be styled as a lead paragraph (i.e., larger font).
+
+See <<leader>> to learn how to write paragraphs.
+
+
+kbd:[F11]
+
+Press the btn:[我的] button when you are finished.
+
+icon:tags[role="red"] ruby, asciidoctor
+
+icon:heart[size=2x,role="red"]
+
+icon:btc[size=2x,role="white"]
+
+pass:[<i class=conum data-value=1></i>]

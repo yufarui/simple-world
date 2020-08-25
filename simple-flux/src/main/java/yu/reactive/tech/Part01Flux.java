@@ -1,4 +1,4 @@
-package yu;
+package yu.reactive.tech;
 
 import reactor.core.publisher.Flux;
 
@@ -44,7 +44,16 @@ public class Part01Flux {
 
     // Create a Flux that emits increasing values from 0 to 9 each 100ms
     Flux<Long> counter() {
-        return Flux.interval(Duration.of(100, ChronoUnit.MILLIS));
+        return Flux.interval(Duration.ofMillis(100))
+                .take(10);
+    }
+
+    public static void main(String[] args) {
+        try {
+            Thread.sleep(2000);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
 }

@@ -42,3 +42,7 @@ doUpdateRepo(){
 }
 
 doUpdateRepo
+
+for i in pwd ls java -version; do
+    ${i}
+done

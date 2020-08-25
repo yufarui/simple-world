@@ -1,0 +1,26 @@
+= 警告
+
+asciidoc内置了5种警告
+
+* NOTE
+* TIP
+* IMPORTANT
+* CAUTION
+* WARNING
+
+`CAUTION vs WARNING` +
+
+* Use CAUTION to advise the reader to act carefully (i.e., exercise care).
+* Use WARNING to inform the reader of danger, harm, or consequences that exist.
+
+:icons: font
+
+NOTE: 注意喽!
+
+TIP: 这可是温馨的小提示
+
+IMPORTANT: 有重要的通知啦
+
+CAUTION: 小心谨慎点,兄弟
+
+WARNING: 警告,警告!bug出现啦

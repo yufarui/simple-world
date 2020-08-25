@@ -19,6 +19,7 @@
         <module>simple-test</module>
         <module>simple-flux</module>
         <module>shell-script</module>
+        <module>simple-asciidoc</module>
     </modules>
 
     <properties>

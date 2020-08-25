@@ -1,0 +1,65 @@
+:hardbreaks:
+
+我们继续练习``asciidoc``
+
+&sect; 对语句的着重强调
+
+我们 文字的示例 hello
+尝试让文字加粗, *hello* 不支持中文
+尝试让文字斜体, __hello__ 不支持中文
+尝试等宽字体 `hello`
+尝试染色 #hello#
+
+替语句加上class属性 格式 \[.name]\#statement#
+Type the word [.userinput]#asciidoc# into the search bar.
+
+&sect; 防止替换
+
+简单来说就是加上\
+
+\*Stars* will appear as *Stars*, not as bold text.
+\&sect; will appear as an entity, not the &sect; symbol.
+\\__func__ will appear as __func__, not as emphasized text.
+\{two-semicolons} will appear {two-semicolons}, not resolved as ;;.
+
+&sect; 内关联指令传递
+
+The text pass:[<u>underline me</u>] is underlined.
+
+尝试使用斜体中文pass:[<i>斜体中文</i>]
+
+开启替换指令 [subs=+macros]
+
+[subs=+macros]
+----
+I better not contain *bold* or _italic_ text.
+pass:quotes[But I should contain *bold* text.]
+----
+
+The text +++<u>underline me</u>+++ is underlined.
+
+
+&#169; (C)
+&#174; (R)
+&#8482; (TM)
+&#8212; --
+
+&#8230; ...
+&#8594;->
+&#8658;=>
+&#8592;<-
+&#8656;<=
+
+
+
+
+
+|===
+|Header 1 |Header 2
+
+|Column 1, row 1
+|Column 2, row 1
+
+|Column 1, row 2
+|Column 2, row 2
+|===

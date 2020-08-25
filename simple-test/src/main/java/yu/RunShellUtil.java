@@ -1,9 +1,12 @@
 package yu;
 
+import ch.ethz.ssh2.Connection;
+import ch.ethz.ssh2.Session;
+import ch.ethz.ssh2.StreamGobbler;
 import com.sun.org.apache.xerces.internal.impl.dv.util.Base64;
 
-import java.io.InputStreamReader;
-import java.io.LineNumberReader;
+import java.io.*;
+import java.text.MessageFormat;
 
 public class RunShellUtil {
 
@@ -27,6 +30,50 @@ public class RunShellUtil {
     }
 
     public static void main(String[] args) {
-        System.out.println(Base64.decode("eyJleHAiOjI0NTU4NTQ2MTksImtzRG9tYWluVXNlciI6eyJwYXNzd29yZCI6bnVsbCwidXNlcm5hbWUiOiJhZG1pbiIsImF1dGhvcml0aWVzIjpbXSwiYWNjb3VudE5vbkV4cGlyZWQiOnRydWUsImFjY291bnROb25Mb2NrZWQiOnRydWUsImNyZWRlbnRpYWxzTm9uRXhwaXJlZCI6dHJ1ZSwiZW5hYmxlZCI6dHJ1ZSwidXNlcklkIjoiYWRtaW4iLCJkaXNwbGF5TmFtZSI6IueuoeeQhuWRmCJ9LCJ1c2VyX25hbWUiOiJhZG1pbiIsImp0aSI6IjFiMWI5OTMzLTFiZjAtNDJhYS05ZmM3LTU1NDQwNjIzOTIzYyIsImNsaWVudF9pZCI6InRlc3Rqd3RjbGllbnRpZCIsInNjb3BlIjpbInJlYWQiLCJ3cml0ZSJdfQ"));
+        Connection conn = new Connection("10.243.141.138", 22);
+        Session ssh = null;
+        try {
+            //连接到主机
+            conn.connect();
+            //使用用户名和密码校验
+            boolean isconn = conn.authenticateWithPassword("root", "Kayak2018!");
+            if (!isconn) {
+                System.out.println("用户名称或者是密码不正确");
+                return;
+            }
+
+            System.out.println("已经连接到" + "10.243.141.138");
+
+            ssh = conn.openSession();
+
+            String cmd = "for i in \"{0}\" \"{1}\" \"{2}\"; do\n" +
+                    "    ${i}\n" +
+                    "done";
+
+            String format = MessageFormat.format(cmd, args);
+            ssh.execCommand(format);
+
+            InputStream is = new StreamGobbler(ssh.getStdout());
+            BufferedReader brs = new BufferedReader(new InputStreamReader(is));
+            while (true) {
+                String line = brs.readLine();
+                if (line == null) {
+                    break;
+                }
+                System.out.println(line);
+            }
+
+        } catch (IOException e) {
+            System.out.println(e.getMessage());
+            e.printStackTrace();
+        } finally {
+            //连接的Session和Connection对象都需要关闭
+            if (ssh != null) {
+                ssh.close();
+            }
+            if (conn != null) {
+                conn.close();
+            }
+        }
     }
 }
