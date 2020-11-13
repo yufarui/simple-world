@@ -3,3 +3,11 @@
 
 # echo 命令用于向窗口输出文本。
 echo "hello world"
+
+dir=$(pwd)
+
+echo "${dir}"
+# 裁剪左边
+echo "${dir%/*/*}"
+# 裁剪右边
+echo "${dir#/*/*}"
