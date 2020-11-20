@@ -1,0 +1,120 @@
+= 计算机专业词汇表
+:doctype: book
+:encoding: utf-8
+:lang: zh-cn
+:toc: left
+:toc-title: 导航目录
+:toclevels: 4
+:sectnums:
+:sectanchors:
+
+:hardbreaks:
+:experimental:
+:icons: font
+
+== 词汇
+
+version skew::
+释义:版本偏差
+来源: https://kubernetes.io/docs/setup/release/[kubernetes]
+
+bare metal environments::
+释义:裸机环境
+来源: https://kubernetes.io/docs/setup/[kubernetes]
+
+portable::
+释义:可移植的
+来源: https://kubernetes.io/docs/concepts/overview/[kubernetes]
+例句:Kubernetes is a portable, extensible, open-source platform;
+
+manipulate::
+释义:操作
+例句:The Kubernetes API lets you query and manipulate the state of objects in Kubernetes;
+
+underutilized::
+释义:利用不足
+
+underlying infrastructure::
+释义:基础架构
+
+Agile application creation and deployment::
+释义:敏捷的应用程序创建和部署
+
+Dev and Ops separation of concerns::
+释义:开发和运营关注点分离
+
+decouple::
+释义:解耦
+例句:create application container images at build/release time rather than deployment time,
+thereby decoupling applications from infrastructure.
+
+OS-level::
+释义:操作系统级别
+metrics::
+释义:指标
+例句:Observability not only surfaces OS-level information and metrics,
+but also application health and other signals.
+
+failover::
+释义:故障转移
+例句:It takes care of scaling and failover for your application, provides deployment patterns, and more.
+
+quorum::
+释义:多数派
+
+canary deployment::
+释义:金丝雀部署
+https://docs.gitlab.com/ee/user/project/canary_deployments.html
+https://martinfowler.com/bliki/CanaryRelease.html
+https://en.wiktionary.org/wiki/canary_in_a_coal_mine[危险的预兆: canary in a coal mine]
+
+traffic::
+释义:流量
+If traffic to a container is high, Kubernetes is able to load balance
+and distribute the network traffic so that the deployment is stable.
+
+Storage orchestration::
+释义:存储编排;
+Kubernetes allows you to automatically mount a storage system of your choice,
+such as local storages, public cloud providers, and more.
+
+Automated rollouts and rollbacks::
+释义:自动化部署和回滚;
+
+Self-healing::
+释义:自我修复
+Kubernetes restarts containers that fail, replaces containers,
+kills containers that don't respond to your user-defined health check,
+and doesn't advertise them to clients until they are ready to serve.
+
+Continuous Integration, Delivery, and Deployment (CI/CD)::
+释义:持续集成,持续发布/部署;
+
+SaaS (Software as a Service)::
+PaaS (Platform as a Service)::
+
+powerful, robust, resilient, and extensible::
+释义:强大,健壮,灵活和可扩展
+例句:This results in a system that is easier to use and more
+powerful, robust, resilient, and extensible
+
+fault-tolerance::
+容错
+
+high availability::
+高可用
+
+persistence store::
+持久存储
+
+Interface Definition Language (IDL)::
+接口定义语言
+
+dumb-server::
+沉默的服务器
+dumb-server is software that fully depends on a connection to a server or cloud service for its functionality.
+Without a network connection, the software offers nothing useful.
+
+OpenAPI Specification(OAS)::
+开源api(application programming interface)规范;
+http://spec.openapis.org/oas/v3.0.3

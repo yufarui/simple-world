@@ -20,6 +20,7 @@
         <module>simple-flux</module>
         <module>shell-script</module>
         <module>simple-asciidoc</module>
+        <module>terminology</module>
     </modules>
 
     <properties>
