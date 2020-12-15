@@ -118,3 +118,135 @@ Without a network connection, the software offers nothing useful.
 OpenAPI Specification(OAS)::
 开源api(application programming interface)规范;
 http://spec.openapis.org/oas/v3.0.3
+
+navgaite::
+浏览
+You will learn how to navigate the edX platform, complete assessments,
+and contribute to course discussions!
+
+monolith::
+独块巨石 -> 单体应用
+
+utilitiy[utilities]::
+实用程序
+
+patch::
+补丁
+
+binary-compatible::
+二进制兼容
+
+ram(Random access memory)::
+随机存取存储器
+radom 此处含义为任意
+Random-access memory (RAM /ræm/) is a form of computer memory that can be read and changed in any order,
+typically used to store working data and machine code.
+A random-access memory device allows data items to be read or written in almost the same amount of time
+irrespective of the physical location of data inside the memory.
+
+initramfs::
+The initial ram filesystem, required for booting, sometimes called initrd, not initramfs.
+
+Power On Self Test::
+开机自检
+
+BIOS::
+Basic Input/Output System
+
+ROM::
+Read-Only Memory
+
+compatibility::
+兼容性
+
+cutting edge system::
+尖端系统
+
+unary adj. /ˈjuːnəri/::
+一元的
+
+screenshot::
+屏幕截图
+
+circumstance /ˈsɜːrkəmstæns/::
+环境
+
+Coordinated Universal Time(UTC)::
+Coordinated Universal Time (or UTC) is the primary time standard by which the world regulates clocks and time.
+It is within about 1 second of mean solar time at 0° longitude, and is not adjusted for daylight saving time.
+It is effectively a successor to Greenwich Mean Time (GMT).
+https://en.wikipedia.org/wiki/Coordinated_Universal_Time
+UTC is similar to, but more accurate than, Greenwich Mean Time (GMT).
+
+Network Time Protocol (NTP)::
+NTP is intended to synchronize all participating computers to within a few milliseconds of Coordinated Universal Time (UTC)
+https://en.wikipedia.org/wiki/Network_Time_Protocol
+
+Virtual Private Networks (VPNs)::
+虚拟专用网络
+https://en.wikipedia.org/wiki/Virtual_private_network
+
+geo-blocking::
+geography-blocking 地域限制技术
+
+wide area network (WAN)::
+广域网
+
+Dynamic Host Configuration Protocol (DHCP)::
+动态主机配置协议
+
+Medium access control::
+媒体访问控制-mac(网卡)
+https://en.wikipedia.org/wiki/Medium_access_control
+https://en.wikipedia.org/wiki/OSI_model
+The MAC address is a unique hexadecimal number of your network card.
+
+SSL::
+Secure Sockets Layer (SSL) is a standard security technology for establishing an encrypted link
+between a server and a client—typically a web server (website) and a browser,
+or a mail server and a mail client (e.g., Outlook).
+
+Transport Layer Security (TLS)::
+https://en.wikipedia.org/wiki/Transport_Layer_Security
+Transport Layer Security (TLS), and its now-deprecated predecessor, Secure Sockets Layer (SSL),
+are cryptographic protocols designed to provide communications security over a computer network
+
+Advanced Package Tool (APT)::
+高级打包工具
+apt->dpkg->debian-family-linux
+
+Red Hat Package Manager (RPM)::
+yum->rpm->fedora-family-linux
+
+Secure SHell (SSH)::
+Once your session is started (either by logging into a text terminal or via a graphical terminal program),
+you can also connect and log into remote systems by using Secure SHell (SSH).
+
+extra exact extract(易混淆)
+
+Teletype(tty)::
+原指电传打印机 => 虚拟终端
+
+CPU (central processing unit) cycles::
+cpu周期
+
+steal time(st)::
+Steal time is the percentage of time a virtual CPU waits for a real CPU
+while the hypervisor is servicing another virtual processor.
+https://scoutapm.com/blog/understanding-cpu-steal-time-when-should-you-be-worried
+
+swap space::
+https://segmentfault.com/a/1190000008125116
+
+Virtual (VIRT), physical (RES), and shared memory (SHR)::
+虚拟内存,物理内存,共享内存
+
+back up and compress data::
+备份和压缩数据
+
+network filesystem(nfs)::
+网络文件系统
+https://zhuanlan.zhihu.com/p/78114809
+
+net segment::
+192.168.1.0/24表示网段是192.168.1.0，子网掩码是24位，子网掩码为：255.255.255.0，
